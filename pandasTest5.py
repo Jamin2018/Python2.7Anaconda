@@ -91,7 +91,7 @@ def main():
     print(pd.merge(left,right,on='key' , how='left'))       # 以 key为主数据，以left 为模板进行整合数据
     print(pd.merge(left,right,on='key' , how='inner'))       # 以 key为主数据，交集数据key,进行整合
     print(pd.merge(left,right,on='key' , how='outer'))       # 以 key为主数据，并集数据key,进行整合
-
+    print('-------------')
     df3 = pd.DataFrame({'A':['a','b','c','b'],'B':list(range(4))})
     print(df3)
 
