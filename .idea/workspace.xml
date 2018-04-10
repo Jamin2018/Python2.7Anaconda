@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6db89db-cdd9-453f-b00d-d7c2e36c8af2" name="默认" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Pandas_Test/0211-0225.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Pandas_Test/product_cost_weight-sample.xlsx" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/0211-0225bak.csv" afterPath="$PROJECT_DIR$/test/0211-0225bak.csv" />
-      <change beforePath="$PROJECT_DIR$/1.py" afterPath="$PROJECT_DIR$/test/1.py" />
+      <change beforePath="$PROJECT_DIR$/Pandas_Test/1.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pandas_Test/11.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pandas_Test/111.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Pandas_Test/Price_amount.py" afterPath="$PROJECT_DIR$/Pandas_Test/Price_amount.py" />
-      <change beforePath="$PROJECT_DIR$/matplotlibTest.py" afterPath="$PROJECT_DIR$/test/matplotlibTest.py" />
-      <change beforePath="$PROJECT_DIR$/numpyTest.py" afterPath="$PROJECT_DIR$/test/numpyTest.py" />
-      <change beforePath="$PROJECT_DIR$/pandasTest1.py" afterPath="$PROJECT_DIR$/test/pandasTest1.py" />
-      <change beforePath="$PROJECT_DIR$/pandasTest2.py" afterPath="$PROJECT_DIR$/test/pandasTest2.py" />
-      <change beforePath="$PROJECT_DIR$/pandasTest3.py" afterPath="$PROJECT_DIR$/test/pandasTest3.py" />
-      <change beforePath="$PROJECT_DIR$/pandasTest4.py" afterPath="$PROJECT_DIR$/test/pandasTest4.py" />
-      <change beforePath="$PROJECT_DIR$/pandasTest5.py" afterPath="$PROJECT_DIR$/test/pandasTest5.py" />
-      <change beforePath="$PROJECT_DIR$/scipyTest.py" afterPath="$PROJECT_DIR$/test/scipyTest.py" />
-      <change beforePath="$PROJECT_DIR$/sku.xlsx" afterPath="$PROJECT_DIR$/test/sku.xlsx" />
-      <change beforePath="$PROJECT_DIR$/text_csv.csv" afterPath="$PROJECT_DIR$/test/text_csv.csv" />
-      <change beforePath="$PROJECT_DIR$/text_excel.xlsx" afterPath="$PROJECT_DIR$/test/text_excel.xlsx" />
+      <change beforePath="$PROJECT_DIR$/Pandas_Test/每日订单数量走势图.jpg" afterPath="$PROJECT_DIR$/Pandas_Test/每日订单数量走势图.jpg" />
+      <change beforePath="$PROJECT_DIR$/test/text_excel.xlsx" afterPath="$PROJECT_DIR$/test/text_excel.xlsx" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,61 +20,79 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Python2_7Anaconda$1.coverage" NAME="1 Coverage Results" MODIFIED="1522300823836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python2_7Anaconda$ccc.coverage" NAME="ccc Coverage Results" MODIFIED="1522398682338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pandas_Test" />
+    <SUITE FILE_PATH="coverage/Python2_7Anaconda$1.coverage" NAME="1 Coverage Results" MODIFIED="1522743834219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pandas_Test" />
     <SUITE FILE_PATH="coverage/Python2_7Anaconda$matplotlibTest.coverage" NAME="matplotlibTest Coverage Results" MODIFIED="1522225026436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python2_7Anaconda$pandasTest5__1_.coverage" NAME="pandasTest5 (1) Coverage Results" MODIFIED="1523327133577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/Python2_7Anaconda$pandasTest3__1_.coverage" NAME="pandasTest3 (1) Coverage Results" MODIFIED="1522231273065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python2_7Anaconda$pandasTest1.coverage" NAME="pandasTest1 Coverage Results" MODIFIED="1522231054801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python2_7Anaconda$pandasTest5.coverage" NAME="pandasTest5 Coverage Results" MODIFIED="1522401351005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python2_7Anaconda$Price_amount.coverage" NAME="Price_amount Coverage Results" MODIFIED="1522670699006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pandas_Test" />
+    <SUITE FILE_PATH="coverage/Python2_7Anaconda$Price_amount.coverage" NAME="Price_amount Coverage Results" MODIFIED="1523362637963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pandas_Test" />
     <SUITE FILE_PATH="coverage/Python2_7Anaconda$pandasTest4.coverage" NAME="pandasTest4 Coverage Results" MODIFIED="1522287130393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python2_7Anaconda$Pyfun.coverage" NAME="Pyfun Coverage Results" MODIFIED="1523365222245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pandas_Test" />
     <SUITE FILE_PATH="coverage/Python2_7Anaconda$pandasTest3.coverage" NAME="pandasTest3 Coverage Results" MODIFIED="1522231003542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python2_7Anaconda$test.coverage" NAME="test Coverage Results" MODIFIED="1522739142427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pandas_Test" />
     <SUITE FILE_PATH="coverage/Python2_7Anaconda$pandasTest.coverage" NAME="pandasTest Coverage Results" MODIFIED="1522228536399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python2_7Anaconda$111.coverage" NAME="111 Coverage Results" MODIFIED="1522660675324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pandas_Test" />
     <SUITE FILE_PATH="coverage/Python2_7Anaconda$numpyTest.coverage" NAME="numpyTest Coverage Results" MODIFIED="1522223220284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python2_7Anaconda$pandasTest2.coverage" NAME="pandasTest2 Coverage Results" MODIFIED="1522231017496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Price_amount.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Pandas_Test/Price_amount.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3402">
-              <caret line="364" column="26" lean-forward="true" selection-start-line="364" selection-start-column="26" selection-end-line="364" selection-end-column="26" />
-              <folding>
-                <element signature="e#25#36#0" expanded="true" />
-                <element signature="e#197#333#0" expanded="false" />
-                <element signature="e#197#253#1" expanded="false" />
-                <element signature="e#371#527#0" expanded="false" />
-                <element signature="e#601#1490#0" expanded="false" />
-                <element signature="e#1564#1997#0" expanded="false" />
-                <element signature="e#2057#2222#0" expanded="false" />
-                <element signature="e#2225#2291#0" expanded="false" />
-                <element signature="e#6787#6885#1" expanded="false" />
-                <element signature="e#7415#7506#1" expanded="false" />
-                <element signature="e#7646#7739#1" expanded="false" />
-                <element signature="e#8244#8337#1" expanded="false" />
-                <element signature="e#10158#10231#1" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pandasTest5.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/pandasTest5.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="11" column="76" lean-forward="false" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.81954885">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Pyfun.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Pandas_Test/Pyfun.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="690">
+                  <caret line="250" column="39" lean-forward="true" selection-start-line="250" selection-start-column="39" selection-end-line="250" selection-end-column="39" />
+                  <folding>
+                    <element signature="e#24#33#0" expanded="true" />
+                    <element signature="e#6037#6916#0" expanded="false" />
+                    <element signature="e#6037#6110#1" expanded="false" />
+                    <element signature="e#6226#6273#0" expanded="false" />
+                    <element signature="e#7114#8061#0" expanded="false" />
+                    <element signature="e#7114#7187#1" expanded="false" />
+                    <element signature="e#7304#7351#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Price_amount.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Pandas_Test/Price_amount.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="297">
+                  <caret line="62" column="52" lean-forward="true" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="64" />
+                  <folding>
+                    <element signature="e#24#33#0" expanded="true" />
+                    <element signature="e#2225#2291#0" expanded="false" />
+                    <element signature="e#6787#6885#1" expanded="false" />
+                    <element signature="e#7415#7506#1" expanded="false" />
+                    <element signature="e#7660#7753#1" expanded="false" />
+                    <element signature="e#8276#8369#1" expanded="false" />
+                    <element signature="e#8981#9063#1" expanded="false" />
+                    <element signature="e#10242#10315#1" expanded="false" />
+                    <element signature="e#10431#10478#0" expanded="false" />
+                    <element signature="e#11320#11393#1" expanded="false" />
+                    <element signature="e#11510#11557#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -89,10 +100,16 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>value</find>
-      <find>sum</find>
       <find>apple</find>
       <find>get_time_price</find>
       <find>rename</find>
+      <find>values</find>
+      <find>gro</find>
+      <find>o</find>
+      <find>get_sku_quantity_purchased_all</find>
+      <find>appl</find>
+      <find>add_weight_freight_df</find>
+      <find>sum</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,7 +130,13 @@
         <option value="$PROJECT_DIR$/Pandas_Test/ccc.py" />
         <option value="$PROJECT_DIR$/pandasTest5.py" />
         <option value="$PROJECT_DIR$/Pandas_Test/111.py" />
+        <option value="$PROJECT_DIR$/Pandas_Test/test.py" />
+        <option value="$PROJECT_DIR$/Pandas_Test/1.py" />
+        <option value="$PROJECT_DIR$/python3数据分析与挖掘建模实战/test1.py" />
+        <option value="$PROJECT_DIR$/python3/test1.py" />
+        <option value="$PROJECT_DIR$/111.java" />
         <option value="$PROJECT_DIR$/Pandas_Test/Price_amount.py" />
+        <option value="$PROJECT_DIR$/Pandas_Test/Pyfun.py" />
       </list>
     </option>
   </component>
@@ -124,7 +147,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="960" />
+    <option name="width" value="1817" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -160,7 +183,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,17 +195,24 @@
               <item name="Python2.7Anaconda" type="462c0819:PsiDirectoryNode" />
               <item name="Pandas_Test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Python2.7Anaconda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python2.7Anaconda" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NWSJonline" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -192,6 +221,7 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\PycharmProjects\Python2.7Anaconda\Pandas_Test" />
+      <recent name="C:\Users\Administrator\PycharmProjects\Python2.7Anaconda\python3数据分析与挖掘建模实战" />
       <recent name="C:\Users\Administrator\PycharmProjects\Python2.7Anaconda" />
     </key>
   </component>
@@ -207,27 +237,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Price_amount">
+  <component name="RunManager" selected="Python.Pyfun">
     <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python2.7Anaconda" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="111" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -240,7 +251,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Python2.7Anaconda" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pandas_Test/111.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pandas_Test/1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -265,7 +276,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="ccc" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Pyfun" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -278,45 +289,64 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Python2.7Anaconda" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pandas_Test/ccc.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pandas_Test/Pyfun.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pandasTest5" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pandasTest5 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Python2.7Anaconda" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pandasTest5.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/pandasTest5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pandas_Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python2.7Anaconda" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pandas_Test/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.pandasTest5" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Price_amount" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Price_amount" />
+      <item index="1" class="java.lang.String" itemvalue="Python.test" />
       <item index="2" class="java.lang.String" itemvalue="Python.1" />
-      <item index="3" class="java.lang.String" itemvalue="Python.ccc" />
-      <item index="4" class="java.lang.String" itemvalue="Python.111" />
+      <item index="3" class="java.lang.String" itemvalue="Python.pandasTest5 (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Pyfun" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Price_amount" />
-        <item index="1" class="java.lang.String" itemvalue="Python.111" />
-        <item index="2" class="java.lang.String" itemvalue="Python.pandasTest5" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ccc" />
-        <item index="4" class="java.lang.String" itemvalue="Python.1" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Pyfun" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Price_amount" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pandasTest5 (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.1" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -341,24 +371,24 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1832627" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.1378579" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" x="27" y="106" width="687" height="421" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31495228" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.70837754" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="文档" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.562167" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="434" height="856" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.114583336" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33549082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4703344" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="文档" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14739583" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="434" height="856" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36458334" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42552084" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27041358" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39554614" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -370,241 +400,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Pandas_Test/Price_amount.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#25#36#0" expanded="true" />
-            <element signature="e#197#333#0" expanded="false" />
-            <element signature="e#197#253#1" expanded="false" />
-            <element signature="e#371#527#0" expanded="false" />
-            <element signature="e#601#1490#0" expanded="false" />
-            <element signature="e#1564#1997#0" expanded="false" />
-            <element signature="e#2057#2222#0" expanded="false" />
-            <element signature="e#2225#2291#0" expanded="false" />
-            <element signature="e#6787#6885#1" expanded="false" />
-            <element signature="e#7415#7506#1" expanded="false" />
-            <element signature="e#7646#7739#1" expanded="false" />
-            <element signature="e#8244#8337#1" expanded="false" />
-            <element signature="e#10158#10231#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pandas_Test/Price_amount.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#25#36#0" expanded="true" />
-            <element signature="e#197#333#0" expanded="false" />
-            <element signature="e#197#253#1" expanded="false" />
-            <element signature="e#371#527#0" expanded="false" />
-            <element signature="e#601#1490#0" expanded="false" />
-            <element signature="e#1564#1997#0" expanded="false" />
-            <element signature="e#2057#2222#0" expanded="false" />
-            <element signature="e#2225#2291#0" expanded="false" />
-            <element signature="e#6787#6885#1" expanded="false" />
-            <element signature="e#7415#7506#1" expanded="false" />
-            <element signature="e#7646#7739#1" expanded="false" />
-            <element signature="e#8244#8337#1" expanded="false" />
-            <element signature="e#10158#10231#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pandas_Test/Price_amount.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#25#36#0" expanded="true" />
-            <element signature="e#197#333#0" expanded="false" />
-            <element signature="e#197#253#1" expanded="false" />
-            <element signature="e#371#527#0" expanded="false" />
-            <element signature="e#601#1490#0" expanded="false" />
-            <element signature="e#1564#1997#0" expanded="false" />
-            <element signature="e#2057#2222#0" expanded="false" />
-            <element signature="e#2225#2291#0" expanded="false" />
-            <element signature="e#6787#6885#1" expanded="false" />
-            <element signature="e#7415#7506#1" expanded="false" />
-            <element signature="e#7646#7739#1" expanded="false" />
-            <element signature="e#8244#8337#1" expanded="false" />
-            <element signature="e#10158#10231#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pandas_Test/Price_amount.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#25#36#0" expanded="true" />
-            <element signature="e#197#333#0" expanded="false" />
-            <element signature="e#197#253#1" expanded="false" />
-            <element signature="e#371#527#0" expanded="false" />
-            <element signature="e#601#1490#0" expanded="false" />
-            <element signature="e#1564#1997#0" expanded="false" />
-            <element signature="e#2057#2222#0" expanded="false" />
-            <element signature="e#2225#2291#0" expanded="false" />
-            <element signature="e#6787#6885#1" expanded="false" />
-            <element signature="e#7415#7506#1" expanded="false" />
-            <element signature="e#7646#7739#1" expanded="false" />
-            <element signature="e#8244#8337#1" expanded="false" />
-            <element signature="e#10158#10231#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pandas_Test/Price_amount.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1239">
-          <caret line="71" column="10" lean-forward="true" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
-          <folding>
-            <element signature="e#25#36#0" expanded="true" />
-            <element signature="e#197#333#0" expanded="false" />
-            <element signature="e#197#253#1" expanded="false" />
-            <element signature="e#371#527#0" expanded="false" />
-            <element signature="e#601#1490#0" expanded="false" />
-            <element signature="e#1564#1997#0" expanded="false" />
-            <element signature="e#2057#2222#0" expanded="false" />
-            <element signature="e#2225#2291#0" expanded="false" />
-            <element signature="e#6787#6885#1" expanded="false" />
-            <element signature="e#7415#7506#1" expanded="false" />
-            <element signature="e#7646#7739#1" expanded="false" />
-            <element signature="e#8244#8337#1" expanded="false" />
-            <element signature="e#10158#10231#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/matplotlibTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/numpyTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1239">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/scipyTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pandasTest1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pandasTest2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pandasTest3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1323">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pandasTest4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2205">
-          <caret line="106" column="26" lean-forward="false" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/matplotlibTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pandasTest5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/numpyTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/numpyTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/numpyTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/numpyTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/111.py" />
-    <entry file="file://$PROJECT_DIR$/test/0211-0225bak.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/text_csv.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pandasTest2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pandasTest1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/scipyTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -718,14 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda2/Lib/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="3613" column="0" lean-forward="false" selection-start-line="3613" selection-start-column="0" selection-end-line="3613" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pandas_Test/fig.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -747,13 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/matplotlibTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="84" lean-forward="false" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/ProgramData/Anaconda2/Lib/site-packages/PIL/Image.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -765,15 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pandas_Test/111.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -781,36 +564,184 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
           <caret line="1921" column="0" lean-forward="false" selection-start-line="1921" selection-start-column="0" selection-end-line="1921" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda2/Lib/site-packages/pandas/core/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="3627" column="30" lean-forward="true" selection-start-line="3627" selection-start-column="30" selection-end-line="3627" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda2/Lib/site-packages/matplotlib/category.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda2/Lib/site-packages/pandas/util/_doctools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pandas_Test/test.py" />
+    <entry file="file://$PROJECT_DIR$/Pandas_Test/1.py" />
+    <entry file="file://$PROJECT_DIR$/Pandas_Test/1.csv" />
+    <entry file="file://$PROJECT_DIR$/Pandas_Test/111.py" />
+    <entry file="file://$PROJECT_DIR$/python3/0211-0225bak.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-630">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python3/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/matplotlibTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda2/Lib/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="943" column="5" lean-forward="true" selection-start-line="943" selection-start-column="5" selection-end-line="943" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda2/Lib/site-packages/seaborn/categorical.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1473">
+          <caret line="2919" column="28" lean-forward="true" selection-start-line="2919" selection-start-column="28" selection-end-line="2919" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/111.java" />
+    <entry file="file://$PROJECT_DIR$/Pandas_Test/每日订单数量走势图.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pandas_Test/数据分析.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pandas_Test/YSW5402订单-退款关系图.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pandas_Test/YSW5402系列每日均价——订单量对比图.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pandas_Test/SKU系列区间订单情况.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pandas_Test/YSW1610系列每日均价——利润对比图.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pandas_Test/YSW1610系列每日均价——订单量对比图.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pandas_Test/0211-0225.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda2/Lib/site-packages/pandas/core/series.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="397" column="0" lean-forward="false" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pandas_Test/sss.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pandas_Test/YSW5402系列每日均价——利润对比图.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda2/Lib/site-packages/pandas/core/internals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="4503" column="0" lean-forward="false" selection-start-line="4503" selection-start-column="0" selection-end-line="4503" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/pandasTest5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="11" column="76" lean-forward="false" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="76" />
+        <state relative-caret-position="315">
+          <caret line="79" column="29" lean-forward="false" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Pandas_Test/Price_amount.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3402">
-          <caret line="364" column="26" lean-forward="true" selection-start-line="364" selection-start-column="26" selection-end-line="364" selection-end-column="26" />
+        <state relative-caret-position="297">
+          <caret line="62" column="52" lean-forward="true" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="64" />
           <folding>
-            <element signature="e#25#36#0" expanded="true" />
-            <element signature="e#197#333#0" expanded="false" />
-            <element signature="e#197#253#1" expanded="false" />
-            <element signature="e#371#527#0" expanded="false" />
-            <element signature="e#601#1490#0" expanded="false" />
-            <element signature="e#1564#1997#0" expanded="false" />
-            <element signature="e#2057#2222#0" expanded="false" />
+            <element signature="e#24#33#0" expanded="true" />
             <element signature="e#2225#2291#0" expanded="false" />
             <element signature="e#6787#6885#1" expanded="false" />
             <element signature="e#7415#7506#1" expanded="false" />
-            <element signature="e#7646#7739#1" expanded="false" />
-            <element signature="e#8244#8337#1" expanded="false" />
-            <element signature="e#10158#10231#1" expanded="false" />
+            <element signature="e#7660#7753#1" expanded="false" />
+            <element signature="e#8276#8369#1" expanded="false" />
+            <element signature="e#8981#9063#1" expanded="false" />
+            <element signature="e#10242#10315#1" expanded="false" />
+            <element signature="e#10431#10478#0" expanded="false" />
+            <element signature="e#11320#11393#1" expanded="false" />
+            <element signature="e#11510#11557#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pandas_Test/Pyfun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="250" column="39" lean-forward="true" selection-start-line="250" selection-start-column="39" selection-end-line="250" selection-end-column="39" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+            <element signature="e#6037#6916#0" expanded="false" />
+            <element signature="e#6037#6110#1" expanded="false" />
+            <element signature="e#6226#6273#0" expanded="false" />
+            <element signature="e#7114#8061#0" expanded="false" />
+            <element signature="e#7114#7187#1" expanded="false" />
+            <element signature="e#7304#7351#0" expanded="false" />
           </folding>
         </state>
       </provider>

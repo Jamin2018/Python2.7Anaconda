@@ -1,19 +1,16 @@
 # -*- coding: utf-8 -*-
-
-import time
+import os
 import random
 import re
-import numpy as  np
 import pandas as pd
-import os
-import matplotlib
-# 导入绘图库
-import matplotlib.pyplot as plt
+import seaborn as sns
+import matplotlib.pyplot as plt  # 导入绘图库
+import pickle
 
 def get_csv(filename):
     '''
     读取目标文件
-    :param filename:
+    :param filename:目标文件
     :return:
     '''
     path = os.getcwd()
@@ -27,13 +24,13 @@ def add_weight_freight_df(df):
     :param df:
     :return:
     '''
-    df['weight'] = round(random.uniform(0.6,1),2)
+    df['weight'] = round(random.uniform(0.6, 1), 2)
     df['freight'] = -10.36
     return df
     # 生成随机重量的
 
 
-def get_sku_quantity_purchased_all(df,transaction_type = 'Order'):
+def get_sku_quantity_purchased_all(df, transaction_type = 'Order'):
     '''
     获得单系列的总计字典
     :param df:
@@ -50,7 +47,7 @@ def get_sku_quantity_purchased_all(df,transaction_type = 'Order'):
     r = r'(.*?)-'
     sku_name_set = set()
     for i in df.index:
-        a = re.match(r,i).group(1)
+        a = re.match(r, i).group(1)
         sku_name_set.add(a)
     sku_name_list = list(sku_name_set)
 
@@ -60,7 +57,6 @@ def get_sku_quantity_purchased_all(df,transaction_type = 'Order'):
         r = r'%s' % sku_name
         data = df[df.index.str.contains(r, na=True)]  # 分别筛选各个系列的详细数据
         sku_quantity_purchased_all_dict[sku_name] = data.sum()[0]
-
     return sku_quantity_purchased_all_dict
 
 
@@ -72,17 +68,16 @@ def get_sku_name_list(df,transaction_type = 'Order',reverse=True):
     :param reverse:
     :return:
     '''
-    sku_quantity_purchased_all_dict = get_sku_quantity_purchased_all(df,transaction_type)
+    sku_quantity_purchased_all_dict = get_sku_quantity_purchased_all(df, transaction_type)
     # 根据'quantity-purchased'总数排序
-    sku_name_dict_sort = sorted(sku_quantity_purchased_all_dict.items(), key=lambda x:x[1] , reverse=reverse)
-    l = []
+    sku_name_dict_sort = sorted(sku_quantity_purchased_all_dict.items(), key=lambda x: x[1], reverse=reverse)
+    lit = []
     for sku_name in sku_name_dict_sort:
-        l.append(sku_name[0])
-    return l
+        lit.append(sku_name[0])
+    return lit
 
 
-
-def get_transaction_type_info(df,transaction_type):
+def get_transaction_type_info(df, transaction_type):
     '''
     获得想要的Order,Refund等订单信息
     :param df:
@@ -264,7 +259,7 @@ def get_sku_info(sku_info_dict,sku_name):
     return sku_info
 
 
-def get_average_price_quantity_purchased(sku_info_dict,sku_name):
+def get_average_price_quantity_purchased(sku_info_dict,sku_name,subplots=True):
     '''
     每日平均销售价格和每日订单量关系图
     :param sku_info_dict:
@@ -277,10 +272,10 @@ def get_average_price_quantity_purchased(sku_info_dict,sku_name):
     # Series --> DataFrame
     average_price,day_number = average_price.to_frame(name=u'每日平均价'),day_number.to_frame(name=u'每日订单量')
     data = pd.concat([average_price,day_number], axis=1)
-    drawing(data, title=u'%s系列每日均价——订单量对比图' % sku_name,subplots=True, ylabel=u'订单量(个)')
+    drawing(data, title=u'%s系列每日均价——订单量对比图' % sku_name,subplots=subplots, ylabel=u'订单量(个)')
 
 
-def get_profit_day(sku_info_dict,sku_name):
+def get_profit_day(sku_info_dict,sku_name,subplots=True):
     '''
     获得每日平均售价和每日利润的关系图
     :param sku_info_dict:
@@ -289,16 +284,16 @@ def get_profit_day(sku_info_dict,sku_name):
     '''
     sku_info = get_sku_info(sku_info_dict,sku_name)
     # 获得每日利润数据
-    profit_day = sku_info['price-amount'] - sku_info['weight'] * sku_info['freight'] *  sku_info['quantity-purchased']
+    profit_day = sku_info['price-amount'] + sku_info['weight'] * sku_info['freight'] *  sku_info['quantity-purchased']
     # 获得每日均价数据
     average_price = sku_info['price-amount'] / sku_info['quantity-purchased']
     # Series --> DataFrame
     average_price,profit_day = average_price.to_frame(name=u'每日均价'),profit_day.to_frame(name=u'每日利润')
     data = pd.concat([average_price,profit_day], axis=1)
-    drawing(data, title=u'%s系列每日均价——利润对比图' % sku_name, subplots=True,ylabel = u'美元')
+    drawing(data, title=u'%s系列每日均价——利润对比图' % sku_name, subplots=subplots,ylabel = u'美元')
 
 
-def get_order_refund(df_order,df_refund):
+def get_order_refund(df_order,df_refund,sku_name):
     '''
     获得退/订金额关系图
     :param df_order:
@@ -313,22 +308,21 @@ def get_order_refund(df_order,df_refund):
     _ = df_price_spread.fillna(0, inplace=True)
     df_price_spread[u'实际订单金额'] = df_price_spread.sum(axis=1)
     df_price_spread[u'退款金额'] = -df_price_spread[u'退款金额']
-    drawing(df_price_spread)
+    drawing(df_price_spread,title=u'%s订单-退款关系图' % sku_name)
 
 
 def get_sku_bar(df,section = 5, transaction_type = 'Order',reverse= True):
     sku_quantity_purchased_all_dict = get_sku_quantity_purchased_all(df, transaction_type)
     sku_name_dict_sort = sorted(sku_quantity_purchased_all_dict.items(), key=lambda x:x[1] , reverse=reverse)[:section]
-    print(sku_name_dict_sort)
-
     n = [n[0] for n in sku_name_dict_sort]
     i = [i[1] for i in sku_name_dict_sort]
     sr = pd.DataFrame(i,index=n)
-    print(sr)
-    drawing(sr,title = u'SKU系列区间订单情况',color ='red',kind='bar',grid=False,legend = False)
+    draw_bar(sr,section,title = u'SKU系列区间订单情况',color ='red',kind='bar',grid=False,legend = False)
+    # seaborn_draw(sr)
 
 
-def drawing(df,kind = 'line',title=u'数据分析',color = None,figsize = (6,6),linewidth = 1.5,alpha = 0.8,subplots=False ,ylabel = u'',grid = True,legend=True):
+def drawing(df, kind = 'line', title=u'数据分析', color = None, figsize = (6,6), linewidth = 1.5, alpha = 0.8,
+            subplots=False, ylabel = u'', grid = True, legend=True):
     '''
     将数据在图上绘制（title命名不要加“/”等特殊字符）
     :param csv:
@@ -342,33 +336,87 @@ def drawing(df,kind = 'line',title=u'数据分析',color = None,figsize = (6,6),
     # if type(csv) == list:
     #     plt.plot(csv[u'YSW5402系列'], 'g-', csv[u'YSW1623系列'], 'r-')
     df.plot(kind = kind , subplots=subplots,color = color,linewidth = linewidth , linestyle = '-' , title = title, alpha = alpha,rot=0,
-             figsize = figsize,fontsize = 7,grid=grid,legend=legend)
+             figsize = figsize,fontsize = 7,grid=grid,legend=legend,)
 
     # 自动化最佳比例
     if kind != 'bar':
         plt.autoscale(tight=True)
-
-    # 定义坐标轴名称
     plt.xlabel(u'2018/2/12 - 2018/2/26')
     plt.ylabel(ylabel)
-    # if type(df) == list:
-    #     plt.savefig('%s.jpg' % title)
-    # elif type(df) == type(pd.DataFrame()):
-    #     plt.savefig('%s.jpg' % title)
+    # 设置y轴范围
+    # plt.ylim(0,150)
+    if type(df) == list:
+        plt.savefig('%s.jpg' % title)
+    elif type(df) == type(pd.DataFrame()):
+        plt.savefig('%s.jpg' % title)
     plt.show()
 
 
+def draw_bar(df, section = 5, kind = 'line', title=u'数据分析', color = None, figsize = (6,6), linewidth = 1.5,
+             alpha = 0.8, subplots=False, ylabel = u'', grid = True, legend=True):
+    '''
+    将数据在图上绘制（title命名不要加“/”等特殊字符）
+    :param csv:
+    :return:
+    '''
+    # 设置中文字体
+    plt.rcParams['font.sans-serif'] = ['FangSong']
+    plt.rcParams['axes.unicode_minus'] = False
+
+    # matplotlib.rc('font', **{'family': 'SimHei'})
+    # 自定义颜色
+    # if type(csv) == list:
+    #     plt.plot(csv[u'YSW5402系列'], 'g-', csv[u'YSW1623系列'], 'r-')
+    df.plot(kind = kind , subplots=subplots,linewidth = linewidth , linestyle = '-' , title = title, alpha = alpha,rot=0,
+             figsize = figsize,fontsize = 7,grid=grid,legend=legend)
+    # 标注坐标
+    x = [x for x in range(section)]
+    y = [int(y[0]) for y in df.values]
+
+    # 添加柱状图值
+    for x,y in zip(x,y):
+        plt.text(x,y,y,color="black",ha='center',va='bottom')
+
+    plt.xlabel(u'2018/2/12 - 2018/2/26')
+    plt.ylabel(ylabel)
+    if type(df) == list:
+        plt.savefig('%s.jpg' % title)
+    elif type(df) == type(pd.DataFrame()):
+        plt.savefig('%s.jpg' % title)
+    plt.show()
+
+
+def seaborn_draw(df):
+    '''
+    使用seaborn绘图
+    :param df:
+    :return:
+    '''
+    # white, dark, whitegrid, darkgrid, ticks
+    sns.set_style('whitegrid')
+    # paper, notebook, talk, poster
+    sns.set_context('talk')
+    sns.set_palette(sns.color_palette('RdBu', n_colors=7))
+    sns.countplot(x=0, data=df)
+    plt.show()
 
 
 if __name__ == '__main__':
-    filename = '0211-0225bak.csv'
-    df = get_csv(filename)
-    sku_name_list = get_sku_name_list(df)
-    get_sku_bar(df,10)
-    # csv_day_order = get_day_order(csv)
-    order_sku_info_dict = get_sku_info_dict(df,'Order',sku_name_list)  # 获得订单的总数据
-    refund_sku_info_dict = get_sku_info_dict(df,'Refund',sku_name_list)  # 获得退款的总数据
-    get_diagram_day_sku_list(order_sku_info_dict,sku_name_list[:5] )  # 每日系列订单数
-    get_average_price_quantity_purchased(order_sku_info_dict,sku_name_list[1]) # 每日订单均价和订单量
-    get_profit_day(order_sku_info_dict,sku_name_list[1])   # 每日订单均价和订单利润
-    get_order_refund(order_sku_info_dict[sku_name_list[1]],refund_sku_info_dict[sku_name_list[1]])  # 获得退/订金额关系图
+    file = '0211-0225bak.csv'
+    filename = 'product_cost_weight-sample.xlsx'
+    df_csv = pd.read_csv(file,usecols=[6,7,17,21,22,24,26])
+
+    sku_name_list = get_sku_name_list(df_csv, reverse=True)
+    # # csv_day_order = get_day_order(csv)
+    order_sku_info_dict = get_sku_info_dict(df_csv, 'Order', sku_name_list)  # 获得订单的总数据
+    refund_sku_info_dict = get_sku_info_dict(df_csv, 'Refund', sku_name_list)  # 获得退款的总数据
+    #
+
+    get_diagram_day_sku_list(order_sku_info_dict, sku_name_list[:6])  # 每日系列订单数
+    # get_average_price_quantity_purchased(order_sku_info_dict, sku_name_list[0])  # 每日订单均价和订单量
+    # # get_average_price_quantity_purchased(order_sku_info_dict, sku_name_list[0], subplots=False)  # 每日订单均价和订单量
+    # get_profit_day(order_sku_info_dict, sku_name_list[0])   # 每日订单均价和订单利润
+    get_profit_day(order_sku_info_dict, sku_name_list[0], subplots=False)   # 每日订单均价和订单利润
+    # 获得退/订金额关系图
+    get_order_refund(order_sku_info_dict[sku_name_list[0]], refund_sku_info_dict[sku_name_list[0]], sku_name_list[0])
+    get_sku_bar(df_csv, 10, reverse=True)
