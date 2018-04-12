@@ -5,7 +5,7 @@ import re
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt  # 导入绘图库
-import pickle
+
 
 
 def get_df(filename, usecols = None):
@@ -30,13 +30,12 @@ def get_sku_name_list(df):
         sku_name_set.add(a)
     return sku_name_set
 
-def get_orderly_sku_list(sku_info_dict, sku_name_list, transaction_type = 'Order', reverse=True):
+def get_orderly_sku_list(sku_info_dict, transaction_type = 'Order', reverse=True):
     '''
     获得有序列表名
     '''
     sku_count_dict = {}
-    for sku_name in sku_name_list:
-        sku_info = get_sku_info(sku_name, sku_info_dict)  # 获得单个sku信息
+    for sku_name,sku_info in sku_info_dict.items():
         sku_useful_info = get_sku_useful_info(sku_name, sku_info, transaction_type=transaction_type)  # 获得订单单个有用信息，根据需求,处理后的sku信息
         sku_count = sku_useful_info['quantity-purchased'].sum(axis=0)
         sku_count_dict[sku_name]=sku_count
@@ -84,6 +83,7 @@ def get_sku_useful_info(sku_name,sku_info,exchange_rate = 0.1589,transaction_typ
     sku_useful_info['product_cost_weight'] = sku_useful_info['quantity-purchased'].apply(lambda x : -x * price * weight * exchange_rate)
     return (sku_useful_info)
 
+
 def get_sku_useful_info_dict(sku_name_list,sku_info_dict):
     '''
     传入一个想查询的列表名，获得该列表的信息字典
@@ -101,7 +101,7 @@ def draw_day_sku_list(sku_useful_info_dict):
     传入想查询的信息字典，经过处理，获得关系图
     '''
     sku_list = []
-    for sku_name,v in sku_useful_info_dict.items():
+    for sku_name, v in sku_useful_info_dict.items():
         data = v['quantity-purchased']
         # DataFrame存入字典后取出变成series，故需要转回DataFrame，顺便设置列名
         data.name = sku_name
@@ -148,7 +148,7 @@ def draw_day_profit_price(sku_name,sku_info_dict,subplots=True):
     # Series --> DataFrame
     average_price,profit_day = average_price.to_frame(name=u'每日均价'),profit_day.to_frame(name=u'每日利润')
     data = pd.concat([average_price,profit_day], axis=1)
-    drawing(data, title=u'%s系列每日均价——利润对比图' % sku_name, subplots=subplots,ylabel = u'美元')
+    draw_chart_table(data, title=u'%s系列每日均价——利润对比图' % sku_name, subplots=subplots,ylabel = u'美元')
 
 
 def draw_day_order_refund(sku_name,sku_info_dict):
@@ -163,7 +163,6 @@ def draw_day_order_refund(sku_name,sku_info_dict):
     df_price_spread[u'实际订单金额'] = df_price_spread.sum(axis=1)
     df_price_spread[u'退款金额'] = -df_price_spread[u'退款金额']
     drawing(df_price_spread,title=u'%s订单-退款关系图' % sku_name)
-
 
 
 def drawing(df, kind = 'line', title=u'数据分析', color = None, figsize = (6,6), linewidth = 1.5, alpha = 0.8,
@@ -230,15 +229,52 @@ def draw_bar(df, section = 5, kind = 'line', title=u'数据分析', color = None
         plt.savefig('%s.jpg' % title)
     plt.show()
 
+
+
+def draw_chart_table(df, to_imgpath=None, kind='line', title=u'数据分析', color=None, figsize=(10, 10), linewidth=1.5, alpha=0.8,
+            subplots=False, ylabel=u'', grid=True, fontsize=15, legend=True, rot=0):
+    '''
+    将数据在图上绘制（title命名不要加“/”等特殊字符）
+    :param csv:
+    :return:
+    '''
+    # 设置中文字体
+    plt.rcParams['font.sans-serif'] = ['FangSong']
+    plt.rcParams['axes.unicode_minus'] = False
+    # matplotlib.rc('font', **{'family': 'SimHei'})
+    # 自定义颜色
+    # if type(csv) == list:
+    #     plt.plot(csv[u'YSW5402系列'], 'g-', csv[u'YSW1623系列'], 'r-')
+    df.plot(kind=kind, subplots=subplots, color=color, linewidth=linewidth, linestyle='-', title=title, alpha=alpha,
+            rot=rot,
+            figsize=figsize, fontsize=fontsize, grid=grid, legend=legend, )
+
+    # 绘制表格
+    col_labels = ['a','b','c']
+    row_labels = ['row1','row2','row3']
+    table_v = [[1,2,3],[4,5,6],[7,8,9]]
+    my_table = plt.table(cellText = table_v,
+                         rowLabels = row_labels,
+                         colLabels = col_labels,
+                         loc = 'upper right')
+
+
+    # 自动化最佳比例
+    if kind != 'bar':
+        plt.autoscale(tight=True)
+    plt.xlabel(u'2018/2/12 - 2018/2/26')
+    plt.ylabel(ylabel)
+    # 设置y轴范围
+    # plt.ylim(0,150)
+    # plt.savefig(to_imgpath + '%s.jpg' % title)
+    plt.show()
+
 if __name__ == '__main__':
     file = '0211-0225bak.csv'
     df_csv = get_df(file,[6,7, 17, 21, 22, 24, 26])  # 获得有用数据
     sku_name_list = get_sku_name_list(df_csv)  # 获得列表名
     sku_info_dict = get_sku_info_dict(df_csv,sku_name_list) # 根据列名获取相关字典信息
-
-
-
-    sku_name_list_sort = get_orderly_sku_list(sku_info_dict, sku_name_list, transaction_type = 'Order',reverse=True)
+    sku_name_list_sort = get_orderly_sku_list(sku_info_dict, transaction_type = 'Order',reverse=True)
 
     sku_name = sku_name_list_sort[0]
     sku_info = get_sku_info(sku_name,sku_info_dict)   # 获得单个sku信息
@@ -248,7 +284,7 @@ if __name__ == '__main__':
     print(sku_useful_info.head(5))
 
     sku_useful_info_dict = get_sku_useful_info_dict(sku_name_list_sort[:5], sku_info_dict)  # 获得选择的sku字典信息
-    draw_day_sku_list(sku_useful_info_dict)
-    draw_day_profits_list(sku_useful_info_dict)
+    # draw_day_sku_list(sku_useful_info_dict)
+    # draw_day_profits_list(sku_useful_info_dict)
     draw_day_profit_price(sku_name,sku_info_dict)
-    draw_day_order_refund(sku_name,sku_info_dict)
+    # draw_day_order_refund(sku_name,sku_info_dict)
