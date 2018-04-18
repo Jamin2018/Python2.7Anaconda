@@ -30,6 +30,7 @@ def main():
     # print(df['20170301'])             # index选择也是没有的
     print(df['20170301':'20170304'])    # index切片
     print(df.loc[dates[0]])             # index选择在这里
+    print ('|||'*100)
     print(df.loc['20170301':'20170304',['B','D']])             # 区间选择
     print(df.at[dates[0],'C'])          # 选择单独的值
 
@@ -39,6 +40,7 @@ def main():
 
     print(df[df.B > 0][df.A < 0])       # 条件选择
     print(df[df >0])                    # 返回大于0的数，小于0的返回NaN
+
     print(df[df['E'].isin([-10,10])])     # 类似sql 中的 in，不会用
 
     print('------------------------     Set   ----------------------------')
